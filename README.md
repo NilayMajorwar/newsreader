@@ -14,3 +14,7 @@ Parses HTML and XML text to obtain the top news items from various categories.
 The GUI toolkit included with Python.
 #### 4. threading
 Required for background news checking in parallel to the GUI mainloop.
+
+# newsreader2
+Has the additional feature of notifying the user via a desktop notification.
+###### Note that you need dbus and its dependencies for the notifications.
