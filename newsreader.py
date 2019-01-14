@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 import time
 from threading import Thread
 
+rssUrl = "https://timesofindia.indiatimes.com/rss.cms"
+updatePeriod = 60
+
 # -----------------------------------------------------------------
 
 def getTopStory(url, categoryName):
@@ -18,7 +21,7 @@ def getTopStory(url, categoryName):
 
 # -------------------------------------------------------------------
 
-data = requests.get("https://timesofindia.indiatimes.com/rss.cms")
+data = requests.get(rssUrl)
 soup = BeautifulSoup(data.text, features = "html.parser")
 storyList = {}
 
@@ -67,7 +70,7 @@ class Application(tk.Frame):
     def updateLoop(self):
         global storyList
         while True:
-            time.sleep(60)
+            time.sleep(updatePeriod)
             self.statusLabel.config(text='Getting updates...')
             for i in range(20):
                 category = masterList[i]
