@@ -1,6 +1,8 @@
 # newsreader
 A Python script that scrapes an online RSS feed for top news, and displays it in a Tkinter-based GUI application. Also, periodically checks for any news updates.
 
+![alt text](https://github.com/NilayMajorwar/newsreader/blob/master/NewsReaderSample.png "Sample screenshot")
+
 ## Details
 1. The RSS feed used is [Times Of India RSS Feed](https://timesofindia.indiatimes.com/rss.cms). This url is defined at the beginning of the script.
 2. The program checks for news updates every minute. This time period is defined at the beginning of the script.
@@ -17,4 +19,7 @@ Required for background news checking in parallel to the GUI mainloop.
 
 # newsreader2
 Has the additional feature of notifying the user via a desktop notification.
+
+![alt text](https://github.com/NilayMajorwar/newsreader/blob/master/notifSample.png "Sample notification")
+
 ###### Note that you need dbus and its dependencies for the notifications.
