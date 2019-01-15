@@ -22,4 +22,4 @@ Has the additional feature of notifying the user via a desktop notification.
 
 ![alt text](https://github.com/NilayMajorwar/newsreader/blob/master/notifSample.png "Sample notification")
 
-###### Note that you need dbus and its dependencies for the notifications.
+###### Note that you need dbus and its dependencies, in addition to the package notify2, for the notification feature.
